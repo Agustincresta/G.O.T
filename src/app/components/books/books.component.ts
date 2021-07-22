@@ -20,12 +20,8 @@ export class BooksComponent implements OnInit {
   ngOnInit() {
     let resultado = this.gotService.getAllBooks().subscribe(
       data => {
-
-        console.log("allBooks data");
         this.allBooks = data;
         this.loading = false;
-        console.log(this.allBooks);
-
       },
       error => {
         

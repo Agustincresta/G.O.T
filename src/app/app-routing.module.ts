@@ -5,7 +5,7 @@ import { CharacterComponent } from './components/character/character.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { HomeComponent } from './components/home/home.component';
 import { HousesComponent } from './components/houses/houses.component';
-import { SearchComponent } from './components/search/search.component';
+
 
 
 const routes: Routes = [
@@ -14,7 +14,6 @@ const routes: Routes = [
   {path:'books', component:BooksComponent},
   {path:'characters', component:CharactersComponent},
   {path:'character/:id', component:CharacterComponent },
-  {path:'search/:name', component:SearchComponent},
   {path:'houses', component:HousesComponent},
 
 ];

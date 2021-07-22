@@ -1,0 +1,17 @@
+search
+<div class="container">
+    <div class="row" *ngIf="characters">
+        <div *ngFor="let character of characters| orderBy:'fullName'" class="col-md-4">
+            <div class="card mt-4">
+                <div class="card-head p-3 text-center">
+                    <span class=" font">{{ character.fullName }}</span>
+                </div>
+                <div class="card-body">
+                    <a [routerLink]="['/character/',character.id]"><img src="{{ character.imageUrl }}" alt="" class="card-img-top img-fluid mx-auto d-block rounded "></a>
+                </div>
+
+            </div>
+        </div> 
+        
+    </div>
+</div>

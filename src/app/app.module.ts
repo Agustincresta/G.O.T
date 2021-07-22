@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { OrderModule } from 'ngx-order-pipe';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './components/search/search.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -40,7 +40,8 @@ import { SearchComponent } from './components/search/search.component';
     HttpClientModule,
     NgxPaginationModule,
     OrderModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

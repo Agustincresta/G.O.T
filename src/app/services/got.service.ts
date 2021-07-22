@@ -23,7 +23,7 @@ export class GotService {
 
   getAllCharacters() {
     let response = this._http.get(this.baseUrl2 + '/characters');
-    console.log(response);
+    
     return response; 
   }
 
@@ -50,5 +50,6 @@ export class GotService {
     console.log(response);
     return response; 
   }
+
 
 }
