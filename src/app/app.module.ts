@@ -10,14 +10,12 @@ import { HomeComponent } from './components/home/home.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { CharacterComponent } from './components/character/character.component';
 import { BooksComponent } from './components/books/books.component';
-import { BookComponent } from './components/book/book.component';
-import { HousesComponent } from './components/houses/houses.component';
-import { HouseComponent } from './components/house/house.component';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderModule } from 'ngx-order-pipe';
 import { FormsModule } from '@angular/forms';
-import { SearchComponent } from './components/search/search.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { QuoteComponent } from './components/quote/quote.component';
+
 
 
 @NgModule({
@@ -28,10 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CharactersComponent,
     CharacterComponent,
     BooksComponent,
-    BookComponent,
-    HousesComponent,
-    HouseComponent,
-    SearchComponent,
+    QuoteComponent,
 
   ],
   imports: [

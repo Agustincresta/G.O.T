@@ -10,6 +10,7 @@ export class GotService {
 
   public baseUrl = 'https://www.anapioficeandfire.com/api/';
   public baseUrl2 = "https://thronesapi.com/api/v2";
+  public baseUrl3 = "https://game-of-thrones-quotes.herokuapp.com/v1";
 
   constructor(public _http:HttpClient) {
 
@@ -27,26 +28,14 @@ export class GotService {
     return response; 
   }
 
-  getAllHouses() {
-    let response = this._http.get(this.baseUrl + '/houses');
-    console.log(response);
-    return response; 
-  }
-
-  getBook(idBook:any){
-    let response = this._http.get(idBook);
-    console.log(response);
-    return response; 
-  }
-
-  getHouse(idHouse:any){
-    let response = this._http.get(idHouse);
-    console.log(response);
-    return response; 
-  }
-
   getCharacter(idCharacter:any){
     let response = this._http.get(this.baseUrl2 + '/characters/'+ idCharacter);
+    console.log(response);
+    return response; 
+  }
+
+  randomQuotes(){
+    let response = this._http.get(this.baseUrl3 + '/random');
     console.log(response);
     return response; 
   }

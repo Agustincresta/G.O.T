@@ -1,0 +1,61 @@
+.quote{
+    background-image: url("../../../assets/img/as.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 75vh;
+    width:100%;
+    margin-top: 5vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    font-family: 'Alex Brush', cursive;
+    
+}
+
+.quote blockquote{
+    padding-left: 2vw;
+    width: 60%;
+    font-size: 3.5vw;
+    font-family: 'Alex Brush', cursive !important;
+    color: rgb(27, 10, 1) !important;
+    
+}
+.quote cite{
+    padding-left: 2vw;
+    margin-top: 2vh;
+    font-family: 'Alex Brush', cursive !important;
+    width: 60%;
+    font-size: 2vw; 
+    color: rgb(27, 10, 1) !important;
+    
+}
+
+@media screen and (max-width:1400px){
+    .quote blockquote{
+        padding-left: 2vw;
+        width: 70%;
+        font-size: 3.5vw; 
+    }
+
+    .quote cite{
+        padding-left: 2vw;
+        width: 70%;
+        font-size: 2.9vw; 
+    }
+}
+
+@media screen and (max-width:500px){
+    .quote h3{
+        padding-left: 2vw;
+        width: 70%;
+        font-size: 4.5vw; 
+    }
+
+    .quote p{
+        padding-left: 2vw;
+        width: 70%;
+        font-size: 2.9vw; 
+    }
+}

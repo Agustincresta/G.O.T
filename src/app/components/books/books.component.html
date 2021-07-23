@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
         <div class="d-flex justify-content-center mt-5" *ngIf="loading" >
-            <div class="spinner-border " role="status">
+            <div class="spinner-border text-white" role="status">
                 <span class="visually-hidden">Loading...</span>
               </div>
         </div>
     <div *ngFor="let book of allBooks" class="col-md-4">
         <div class="card mt-4">
-            <div class="card-head p-3">
-                <h3 class="text-center font">{{ book.name }}</h3>
+            <div class="card-header pt-4">
+                <h4 class="text-center font">{{ book.name }}</h4>
             </div>
-            <div class="card body p-2">
+            <div class="card-body p-2">
                 <p>Author: <span>{{ book.authors }}</span></p>
                 <P>Released: <span>{{ book.released | date:'longDate' }}</span></P>
                 <P>Pages: <span>{{ book.numberOfPages }}</span></P>

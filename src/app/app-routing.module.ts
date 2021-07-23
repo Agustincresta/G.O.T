@@ -4,7 +4,8 @@ import { BooksComponent } from './components/books/books.component';
 import { CharacterComponent } from './components/character/character.component';
 import { CharactersComponent } from './components/characters/characters.component';
 import { HomeComponent } from './components/home/home.component';
-import { HousesComponent } from './components/houses/houses.component';
+import { QuoteComponent } from './components/quote/quote.component';
+
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:'books', component:BooksComponent},
   {path:'characters', component:CharactersComponent},
   {path:'character/:id', component:CharacterComponent },
-  {path:'houses', component:HousesComponent},
+  {path:'quote', component:QuoteComponent },
+
 
 ];
 
